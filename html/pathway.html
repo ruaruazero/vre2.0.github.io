@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pathway</title>
+    <link rel="stylesheet" href="../css/treeplot.css">
+</head>
+<body>
+    <div id="mobile-bar" class="top">
+        <a class="menu-button"></a>
+        <a class="logo" href="/"></a>
+    </div>
+    <div>
+        <div id="v3-banner">
+        <span class="hidden-sm">您在浏览的是船新版本网站</span> 旧版网站<a href="#">在这里</a>。
+    </div>
+        <header id="header">
+        <a id="logo" href="../index.html">
+            <img src="../images/v.svg" alt="vue logo">
+            <span></span>
+        </a>
+        <ul id="nav">
+            <li>
+                <form id="search-form">
+                    <input type="text" id="search-query-nav" class="search-query st-default-search-input aa-input" aria-label="搜索" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: system-ui; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-east-asian: normal; font-variant-position: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                </form>
+            </li>
+            <li class="nav-dropdown-container resources">
+                <a href="#" class="nav-link">Start</a><span class="arrow"></span>
+                <ul class="nav-dropdown">
+                    <li><a href="./workbench.html" class="nav-link">Workbench</a></li>
+                    <li><a href="./3d.html" class="nav-link">3D</a></li>
+                    <li><a href="./pathway.html" class="nav-link" target="_blank" rel="noopener">Pathway</a></li>
+                    <li><a href="./treeplot.html" class="nav-link" target="_blank" rel="noopener">Tree-plot</a></li>
+                    <li><a href="./search.html" class="nav-link" target="_blank" rel="noopener">Search</a></li>
+<!--                    <li><a href="./tools.html" class="nav-link" target="_blank" rel="noopener">Tools</a></li>-->
+                </ul>
+            </li>
+            <li>
+                <a href="./team.html" class="nav-link team">Team</a>
+            </li>
+            <li>
+                <a href="./info.html" class="nav-link team">Info</a>
+            </li>
+            <li>
+                <a href="./sign.html" class="nav-link team">Login</a>
+            </li>
+        </ul>
+    </header>
+</div>
+    <main>
+        <div id="table">
+            <div class="name">
+                <h2>The
+                    <br>
+                    <p>Pathway</p>
+                </h2>
+            </div>
+            <form class="search-form" id="form2" name="form2" target="_blank" rel="noopener"
+            @submit="search2">
+                <input type="text" class="search-input2" name="sequence">
+                <input type="submit" class="button-search-form" value="search">
+                <div class="search-method">
+                    <input id="method" type="text" list="methods-list" value="search mode">
+                    <datalist id="methods-list">
+                        <option>Summary</option>
+                        <option>3D View</option>
+                        <option>Annotations</option>
+                        <option>Experiment</option>
+                        <option>Sequence</option>
+                        <option>Genome</option>
+                        <option>Ligands</option>
+                        <option>Versions</option>
+                    </datalist>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div id="info" style="margin-top: 200px;display: block;width: 80%; letter-spacing: 2px;align-items: center;
+    margin-left: 10%;margin-right:10%; margin-bottom: 100px;">
+        <h1>Instructions for use</h1>
+        We have eight search mode to do<br />
+        1·Find basic protein structures for each influenza A protein.<br />
+        2·Find 3D protein structures by protein name, subtype, strain name or advanced search criteria including public identifiers.<br />
+        3·Find Proteins with structures by protein name, subtype, strain name or advanced search criteria including public identifiers.<br />
+        4·Find 3D Protein Structures - by PDB ID
+        <br /><br /><br /><br />
+
+        <h2>Example</h2>
+        1. Click Search for Protein with structures files.<br />
+        2. Check A in VIRUS TYPE.<br />
+        3. Select 4 HA from Proteins to Search.<br />
+        4. Click Search
+    </div>
+    <div class="copy">
+        <p>
+            <br>
+            Copyright © 2022 Good Juice Technology Co., Ltd.
+        </p>
+    </div>
+</body>
+</html>

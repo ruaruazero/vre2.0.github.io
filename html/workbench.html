@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work Bench</title>
+    <link rel="stylesheet" href="../css/workbench.css">
+</head>
+<body>
+    <div id="mobile-bar" class="top">
+    <a class="menu-button"></a>
+    <a class="logo" href="/"></a>
+</div>
+    <div>
+    <div id="v3-banner">
+        <span class="hidden-sm">您在浏览的是船新版本网站</span> 旧版网站<a href="#">在这里</a>。
+    </div>
+    <header id="header">
+        <a id="logo" href="../index.html">
+            <img src="../images/v.svg" alt="vue logo">
+            <span></span>
+        </a>
+        <ul id="nav">
+            <li>
+                <form id="search-form">
+                    <input type="text" id="search-query-nav" class="search-query st-default-search-input aa-input" aria-label="搜索" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: system-ui; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-east-asian: normal; font-variant-position: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                </form>
+            </li>
+            <li class="nav-dropdown-container resources">
+                <a href="#" class="nav-link">Start</a><span class="arrow"></span>
+                <ul class="nav-dropdown">
+                    <li><a href="./workbench.html" class="nav-link">Workbench</a></li>
+                    <li><a href="./3d.html" class="nav-link">3D</a></li>
+                    <li><a href="./pathway.html" class="nav-link" target="_blank" rel="noopener">Pathway</a></li>
+                    <li><a href="./treeplot.html" class="nav-link" target="_blank" rel="noopener">Tree-plot</a></li>
+                    <li><a href="./search.html" class="nav-link" target="_blank" rel="noopener">Search</a></li>
+<!--                    <li><a href="./tools.html" class="nav-link" target="_blank" rel="noopener">Tools</a></li>-->
+                </ul>
+            </li>
+            <li>
+                <a href="./team.html" class="nav-link team">Team</a>
+            </li>
+            <li>
+                <a href="./info.html" class="nav-link team">Info</a>
+            </li>
+            <li>
+                <a href="./sign.html" class="nav-link team">Login</a>
+            </li>
+        </ul>
+    </header>
+</div>
+    <div id="job">
+        <div class="left">
+            <div class="bo">
+                <h1>3D</h1>
+                <p>choose your sequence</p>
+                <div class="ra">
+                    <input type="radio" id="seq1" name="seq1" value="seq1">
+                    <label for="seq1">sequence 1</label>
+                </div>
+                <div class="ra">
+                    <input type="radio" id="seq2" name="seq2" value="seq2" >
+                    <label for="seq2">sequence 2</label>
+                </div>
+                <div class="ra">
+                    <input type="radio" id="seq3" name="seq3" value="seq3" >
+                    <label for="seq3">sequence 3</label>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="submit">
+                </div>
+            </div>
+            <div class="sep"></div>
+            <div class="bo">
+                <h1>Pathway</h1>
+                <p>choose your sequence</p>
+                <div class="ra">
+                    <input type="radio" id="seq21" name="seq21" value="seq21">
+                    <label for="seq21">sequence 1</label>
+                </div>
+                <div class="ra">
+                    <input type="radio" id="seq22" name="seq22" value="seq22" >
+                    <label for="seq22">sequence 2</label>
+                </div>
+                <div class="ra">
+                    <input type="radio" id="seq23" name="seq23" value="seq23" >
+                    <label for="seq23">sequence 3</label>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="submit">
+                </div>
+            </div>
+            <div class="sep"></div>
+            <div class="bo">
+                <h1>Tree Plot</h1>
+                <p>choose your sequence</p>
+                <div class="ra">
+                    <input type="radio" id="seq31" name="seq31" value="seq31"d>
+                    <label for="seq31">sequence 1</label>
+                </div>
+                <div class="ra">
+                    <input type="radio" id="seq32" name="seq32" value="seq32" >
+                    <label for="seq32">sequence 2</label>
+                </div>
+                <div class="ra">
+                    <input type="radio" id="seq33" name="seq33" value="seq33" >
+                    <label for="seq33">sequence 3</label>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="submit">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="had">
+                <h1>Uploaded Sequence</h1>
+            </div>
+            <div class="con">
+                <div class="seq">
+                    <p>sequence 1 | id: P49711</p>
+                    <p>sequence 2 | id: Q9H9S0</p>
+                    <p>sequence 3 | id: P69892</p>
+                </div>
+            </div>
+            <div class="fi">
+                <label for="avatar">Upload a new sequence:</label>
+                <input type="file" id="avatar" name="avatar" accept="text/csv">
+            </div>
+            <div id="info" style="margin-top: 100px;display: block;width: 80%; letter-spacing: 2px;align-items: center;
+            margin-left: 10%;margin-right:10%; margin-bottom: 100px;">
+                <h1>Instructions for use</h1>
+                Here is what you can do in this page.<br />
+                1·Operate all uploaded sequences.<br />
+                2·Upload a new sequences file<br />
+                3·Bulk Operation Sequences<br />
+                4·Choose sequences to do different work
+                <br /><br /><br /><br />
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <p>
+            <br>
+            Copyright © 2022 Good Juice Technology Co., Ltd.
+        </p>
+    </div>
+</body>
+</html>
